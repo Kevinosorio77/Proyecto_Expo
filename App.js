@@ -1,8 +1,9 @@
 import Botones from "./src/pages/Butones";
-//import Home from "./src/pages/Home";
-function Home() {
+// import Home from "./src/pages/Home";
+export default function App() {
   return (
-   //<Home/>
-   <Botones/> 
+    // <Home />
+    <Botones />
   );
 }
+
