@@ -24,4 +24,3 @@ const styles = StyleSheet.create({
   h2: {fontSize: 20,fontWeight: '600',marginTop: 10,},
   h3: {fontSize: 14,fontWeight: '500',lineHeight: 22,marginTop: 5,},
 });
-
