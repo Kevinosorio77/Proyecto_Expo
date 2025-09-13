@@ -1,21 +1,20 @@
-import { View, Text, StyleSheet, Platform, StatusBar } from "react-native";
+import { View, Text, StyleSheet, Platform, StatusBar, ScrollView } from "react-native";
 import CardBasico from "./components/CardBasico";
 import CardImg from "./components/CardImg";
 import CardV2 from "./components/CardV2";
-
-
-
-
-
+import CardV3 from "./components/CardV3";
 
 export default function HomePrincipal() {
   return (
-    <View style={styles.mainS}>
-      <Text style={styles.title}>Página principal</Text>
-      <CardBasico/>
-      <CardImg/>
-      <CardV2/>
-    </View>
+    <ScrollView>
+      <View style={styles.mainS}>
+        <Text style={styles.title}>Página principal</Text>
+        <CardBasico />
+        <CardImg />
+        <CardV2 />
+        <CardV3 />
+      </View>
+    </ScrollView>
   );
 }
 
