@@ -15,6 +15,9 @@ export const Formulario = () => {
 
 <Text style={styles.label}>Contrasena</Text>
       <TextInput style={styles.input} placeholder="*****" secureTextEntry />
+
+      <Text style={styles.label}>Telefono</Text>
+      <TextInput style={styles.input} placeholder="123456" keyboardType="phone-pad"/>
       
     </SafeAreaView>
   );
