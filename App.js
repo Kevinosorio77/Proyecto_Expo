@@ -1,7 +1,9 @@
 
 //import Botones from "./src/pages/BotonesV2";
 
-import { Formulario } from "./src/pages/Formulario";
+import { FormularioV2 } from "./src/pages/FormularioV2_";
+
+//import { Formulario } from "./src/pages/Formulario";
 
 //import Botones from "./src/pages/Butones";
 //mport HomePrincipal from "./src/pages/HomePrincipal";
@@ -13,7 +15,8 @@ export default function App() {
     // <Botones />
     //<BotonesV2/>
   // <HomePrincipal/>
-  <Formulario/>
+  //<Formulario/>
+  <FormularioV2/>
   );
 }
 
