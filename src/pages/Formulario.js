@@ -4,7 +4,7 @@ export const Formulario = () => {
   return (
     <SafeAreaView style={styles.mainS}>
       <Text style={styles.label}>Nombre</Text>
-      <TextInput style={styles.input} placeholder="Escribe tu nombre" />
+      <TextInput multiline={true} numberOfLines={4} style={styles.input} placeholder="Escribe tu nombre" />
 
       <Text style={styles.label}>Descripción</Text>
       <TextInput style={[styles.input, styles.textArea]} placeholder="Describe tu personalidad" />
