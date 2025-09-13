@@ -1,7 +1,9 @@
 
 //import Botones from "./src/pages/BotonesV2";
 
-import { FormularioV2 } from "./src/pages/FormularioV2_";
+import { ListaAlumnos } from "./src/pages/Lista-Alumnos/ListaAlumnos";
+
+//import { FormularioV2 } from "./src/pages/FormularioV2_";
 
 //import { Formulario } from "./src/pages/Formulario";
 
@@ -16,7 +18,8 @@ export default function App() {
     //<BotonesV2/>
   // <HomePrincipal/>
   //<Formulario/>
-  <FormularioV2/>
+  //<FormularioV2/>
+  <ListaAlumnos/>
   );
 }
 

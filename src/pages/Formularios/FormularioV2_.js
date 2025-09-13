@@ -15,10 +15,7 @@ export const FormularioV2 = () => {
             <Icon name="close" size={20} color={"#000"} />
           </TouchableOpacity>
 
-          <Image 
-            source={{ uri: "https://reactnative.dev/img/tiny_logo.png" }} 
-            style={styles.avatar} 
-          />
+          <Image  source={{ uri: "https://reactnative.dev/img/tiny_logo.png" }}  style={styles.avatar} />
           <Text style={styles.name}>Kevin Andrew</Text>
 
           <View style={styles.infoContainer}>
