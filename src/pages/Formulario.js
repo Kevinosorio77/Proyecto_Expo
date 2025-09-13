@@ -3,11 +3,19 @@ import { Platform, StatusBar, StyleSheet, View, SafeAreaView, Text, TextInput } 
 export const Formulario = () => {
   return (
     <SafeAreaView style={styles.mainS}>
+        
+      <Text style={styles.label}>Descripción</Text>
+      <TextInput style={[styles.input, styles.textArea]} placeholder="Describe tu personalidad" />
+
       <Text style={styles.label}>Nombre</Text>
       <TextInput multiline={true} numberOfLines={4} style={styles.input} placeholder="Escribe tu nombre" />
 
-      <Text style={styles.label}>Descripción</Text>
-      <TextInput style={[styles.input, styles.textArea]} placeholder="Describe tu personalidad" />
+      <Text style={styles.label}>Correo Electrico</Text>
+      <TextInput style={styles.input} placeholder="Ingresa el correo" keyboardType="email-address" />
+
+<Text style={styles.label}>Contrasena</Text>
+      <TextInput style={styles.input} placeholder="*****" secureTextEntry />
+      
     </SafeAreaView>
   );
 };
