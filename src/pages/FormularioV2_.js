@@ -1,5 +1,6 @@
-import { Image, Platform, StatusBar, StyleSheet, View, SafeAreaView, Text, ScrollView, Dimensions, TouchableOpacity } from "react-native";
-import Icon from "react-native-vector-icons/FontAwesome"; // descomentado
+import { Image, Platform, StatusBar, StyleSheet, View, Text, ScrollView, Dimensions, TouchableOpacity } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import Icon from "react-native-vector-icons/FontAwesome";
 
 const { width } = Dimensions.get("window");
 
@@ -9,7 +10,15 @@ export const FormularioV2 = () => {
       <ScrollView>
         <Text style={styles.title}>Formulario</Text>
         <View style={styles.container}>
-          <Image source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }}style={styles.avatar}/>
+
+          <TouchableOpacity style={styles.cerrarBoton}>
+            <Icon name="close" size={20} color={"#000"} />
+          </TouchableOpacity>
+
+          <Image 
+            source={{ uri: "https://reactnative.dev/img/tiny_logo.png" }} 
+            style={styles.avatar} 
+          />
           <Text style={styles.name}>Kevin Andrew</Text>
 
           <View style={styles.infoContainer}>
@@ -112,5 +121,17 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 16,
     marginLeft: 8,
+  },
+  cerrarBoton: {
+    position: "absolute",
+    top: 10,
+    right: 10,
+    zIndex: 10,
+    borderRadius: 15,
+    backgroundColor: "#9c2020ff",
+    width: 30,
+    height: 30,
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
