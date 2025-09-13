@@ -1,14 +1,4 @@
-import { 
-  Platform, 
-  Image, 
-  StatusBar, 
-  StyleSheet, 
-  SafeAreaView, 
-  Text, 
-  View, 
-  ScrollView, 
-  TouchableOpacity 
-} from "react-native";
+import { Platform, Image, StatusBar, StyleSheet, SafeAreaView, Text, View, ScrollView, TouchableOpacity} from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 
 export const ListaAlumnos = () => {
@@ -25,10 +15,7 @@ export const ListaAlumnos = () => {
 
         {[1, 2, 3, 4, 5].map((item, index) => (
           <View key={index} style={styles.card}>
-            <Image 
-              source={{ uri: "https://reactnative.dev/img/tiny_logo.png" }}
-              style={styles.avatar}
-            />
+            <Image source={{ uri: "https://reactnative.dev/img/tiny_logo.png" }}style={styles.avatar}/>
             <View style={styles.cardInfo}>
               <Text style={styles.userName}>Kevin Andrew</Text>
               <Text style={styles.userDetais}>Inf. Sistemas</Text>
@@ -40,6 +27,22 @@ export const ListaAlumnos = () => {
           </View>
         ))}
       </ScrollView>
+
+      {/* Navbar */}
+      <View style={styles.navbar}>
+        <View style={styles.navItem}>
+          <Icon name="home" size={20} color={"#000"} />
+          <Text style={styles.navText}>Inicio</Text>
+        </View>
+        <View style={styles.navItem}>
+          <Icon name="save" size={20} color={"#000"} />
+          <Text style={styles.navText}>Guardar</Text>
+        </View>
+        <View style={styles.navItem}>
+          <Icon name="user" size={20} color={"#000"} />
+          <Text style={styles.navText}>Perfil</Text>
+        </View>
+      </View>
     </SafeAreaView>
   );
 };
@@ -108,5 +111,21 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontWeight: "bold",
   },
+  navbar: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    height: 60,
+    backgroundColor: "#fff",
+    borderTopWidth: 1, // ✅ agregado valor
+    borderTopColor: "#ccc",
+  },
+  navItem: {
+    alignItems: "center",
+  },
+  navText: {
+    fontSize: 12,
+    color: "#000",
+    marginTop: 4,
+  },
 });
-
