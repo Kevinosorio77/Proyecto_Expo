@@ -27,6 +27,8 @@ export const ListaAlumnos = () => {
             </TouchableOpacity>
           </View>
         </View>
+         
+        
       </ScrollView>
     </SafeAreaView>
   );
@@ -70,21 +72,30 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     marginRight: 12,
   },
-  cardInfo: {},
+  cardInfo: {
+flex: 1,
+    justifyContent: "center",
+  },
   userName: {
     fontSize: 16,
     fontWeight: "bold",
+    marginBottom: 4,
   },
   userDetais: {
+    
+    fontWeight: "600",
     fontSize: 14,
-    color: "gray",
+    marginBottom: 8,
+    
+   
   },
   saveButton: {
+    backgroundColor: "#32aa44",
     marginTop: 8,
     padding: 8,
-    backgroundColor: "#32aa44",
-    borderRadius: 6,
-    alignItems: "center",
+  alignSelf: "flex-end",
+  paddingVertical: 6,
+  borderRadius: 4,
   },
   saveButtonText: {
     color: "#fff",
